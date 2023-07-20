@@ -27,7 +27,7 @@
             <div class="container d-lg-flex flex-lg-row-reverse">
                 <ul class="navbar-nav">
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link px-lg-4 text-uppercase" href="index.html">Shota Hirokawa</a>
+                        <a class="nav-link px-lg-4 text-uppercase" href="index.html">Back to profile</a>
                     </li>
                 </ul>
             </div>
@@ -39,29 +39,22 @@
     <!--Main-->
     <div class="container-fluid p-0">
         <!-- Home-->
-        <section id="Home" style="padding-top: 3%;">
-            <div id="homeCarousel" class="carousel slide carousel-fade carousel-dark">
+        <section id="Home" style="padding-top: 3%; position: relative;">
+            <div style="position: absolute; background-color: black; margin-top: 17%; padding-top: 5%; padding-bottom: 5%;"  class="w-100 text-uppercase">
+                <h1 style="text-align: center; color: white; font-size: 2em">
+                    Welcome to<br> our Restaurant reservation app Page
+                </h1>
+            </div>
+            <div id="homeCarousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/Manage-calendar-1.png" class="d-block w-100" alt="..." style="filter: opacity(70%);">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Manager Calendar Page</h1>
-                            <h5>全ての営業時間をカレンダーで管理できます。営業時間の追加や変更、削除、お客様から予約できるかどうか選択できます。</h5>
-                        </div>
+                        <img src="assets/img/Manage-calendar-1.png" class="d-block w-100" alt="Manage-calendar-1" style="filter: opacity(70%);">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/Manage-reservation-3.png" class="d-block w-100" alt="..." style="filter: opacity(70%);">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Manager Reservation Page</h1>
-                            <h5>選択した営業時間内の予約を管理することができます。予約の追加や変更、削除、テーブルの割り当てが可能です。</h5>
-                        </div>
+                        <img src="assets/img/Manage-reservation-3.png" class="d-block w-100" alt="Manage-reservation-3" style="filter: opacity(70%);">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/Member-home-1.png" class="d-block w-100" alt="..." style="filter: opacity(70%);">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Member Page</h1>
-                            <h5>レストランのホームページです。お客様はこのページから営業時間を選択し、予約ができます。</h5>
-                        </div>
+                        <img src="assets/img/Member-home-1.png" class="d-block w-100" alt="Member-home-1" style="filter: opacity(70%);">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
@@ -123,6 +116,9 @@
                 <div class="col-lg-6 order-lg-1"  style="padding: 5%;">
                     <h1>マネージャー</h1>
                     <h3>全ての営業時間をカレンダー、予約を表で管理できます。<br>またマネージャーやスタッフなど、このアプリケーションの権限をユーザーに付与することができます。</h3>
+                    <p>営業時間、最大予約人数、繰り返し期間・曜日を設定し、カレンダーに営業時間を作成することができます。
+                        <br>営業時間はActive・Inactiveを切り替えができ、Activeにするとお客様からのネット予約を受け付けることができます。
+                        <br>Inactiveにするとお客様からのネット予約を受け付けません。</p>
                 </div>
                 <div class="col-lg-6 order-lg-2">
                     <div id="managerCarousel" class="carousel slide carousel-fade carousel-dark">
@@ -168,6 +164,9 @@
                 <div class="col-lg-6 order-lg-2" style="padding: 5%;">
                     <h1>スタッフ</h1>
                     <h3>カレンダーから営業時間を選択し、その営業時間の予約を追加、変更、削除、テーブルの割り当てができます。</h3>
+                    <p>名前・電話番号・Email・滞在予定時間・人数・予約時間を入力し、予約を作成することができます。
+                        <br>予約に対してテーブルの割り振りができます。その営業時間内に既に使用されているテーブルは割り当てられません。
+                        <br>各予約の状況をドロップダウンオプションで、「確定待ち・確定済み・キャンセル済み・完了」のステータスに変更できます。</p>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div id="staffCarousel" class="carousel slide carousel-fade carousel-dark">
@@ -207,6 +206,7 @@
                 <div class="col-lg-6 order-lg-1" style="padding: 5%;">
                     <h1>メンバー</h1>
                     <h3>カレンダーから営業時間を選択し、レストランの予約が可能です。<br>メンバーとして情報を登録している場合、予約フォームにメンバー情報が自動入力されます。</h3>
+                    <p>予約フォームに情報を記入し、予約を申請します。後にスタッフがテーブルを割り当てることで予約が確定します。</p>
                 </div>
                 <div class="col-lg-6 order-lg-2">
                     <div id="memberCarousel" class="carousel slide carousel-fade">
@@ -241,7 +241,7 @@
         <!--Footer-->
         <section style="padding-left: 1%; padding-right: 1%;">
             <div class="row">
-                <p>作成メンバー<br>廣川　翔太 (Shota Hirokawa)<br>Thomas Neil<br>Jorge Andres Palma Prieto</p>
+                <p>作成チームメイト<br>廣川　翔太 (Shota Hirokawa)<br>Thomas Neil<br>Jorge Andres Palma Prieto</p>
             </div>
         </section>
     </div>
