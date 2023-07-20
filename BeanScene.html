@@ -7,22 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
+<body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block">Restaurant Reservation App</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Home">Home</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#About">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Management">Management</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Member">Member</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav" style="padding-left: 1%;">
+        <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block">Restaurant Reservation App</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Management">Management</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Staff">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Member">Member</a></li>
+                </ul>
+            </div>
+            <div class="container d-lg-flex flex-lg-row-reverse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link px-lg-4 text-uppercase" href="index.html">Shota Hirokawa</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+
     </nav>
+
+    <!--Main-->
     <div class="container-fluid p-0">
         <!-- Home-->
         <section id="Home" style="padding-top: 3%;">
@@ -71,32 +85,32 @@
             </div>
             <div class="row text-center justify-content-center">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-dark">
                         <i class="bi bi-server" style="font-size: 70px;"></i>
                         <div class="card-body">
                             <h3 class="card-title">マネージャー</h3>
                             <p class="card-text">全ての営業時間、予約、ユーザーを管理できます。</p>
-                            <a href="#Management" class="btn btn-primary">詳細へ</a>
+                            <a href="#Management" class="btn btn-dark">詳細へ</a>
                         </div>
                     </div>                    
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-dark">
                         <i class="bi bi-people-fill" style="font-size: 70px;"></i>
                         <div class="card-body">
                             <h3 class="card-title">スタッフ</h3>
                             <p class="card-text">選択した営業時間の全ての予約を管理できます。</p>
-                            <a href="#Staff" class="btn btn-primary">詳細へ</a>
+                            <a href="#Staff" class="btn btn-dark">詳細へ</a>
                         </div>
                     </div>                    
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-dark">
                         <i class="bi bi-person-fill" style="font-size: 70px;"></i>
                         <div class="card-body">
                             <h3 class="card-title">メンバー</h3>
                             <p class="card-text">営業時間を選択し、予約をすることが可能です。</p>
-                            <a href="#Member" class="btn btn-primary">詳細へ</a>
+                            <a href="#Member" class="btn btn-dark">詳細へ</a>
                         </div>
                     </div>                    
                 </div>
@@ -111,7 +125,39 @@
                     <h3>全ての営業時間をカレンダー、予約を表で管理できます。<br>またマネージャーやスタッフなど、このアプリケーションの権限をユーザーに付与することができます。</h3>
                 </div>
                 <div class="col-lg-6 order-lg-2">
-                    <img src="assets/img/Manage-calendar-1.png" class="d-block w-100" alt="Manage-calendar-1" >
+                    <div id="managerCarousel" class="carousel slide carousel-fade carousel-dark">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/Manage-home-1.png" class="d-block w-100" alt="Manage-home" >
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="assets/img/Manage-calendar-1.png" class="d-block w-100" alt="Manage-calendar-1" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-calendar-2.png" class="d-block w-100" alt="Manage-calendar-2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-calendar-3.png" class="d-block w-100" alt="Manage-calendar-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-calendar-4.png" class="d-block w-100" alt="Manage-calendar-4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-user-1.png" class="d-block w-100" alt="Manage-user-1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-user-2.png" class="d-block w-100" alt="Manage-user-2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#managerCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#managerCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,7 +170,33 @@
                     <h3>カレンダーから営業時間を選択し、その営業時間の予約を追加、変更、削除、テーブルの割り当てができます。</h3>
                 </div>
                 <div class="col-lg-6 order-lg-1">
-                    <img src="assets/img/Manage-reservation-3.png" class="d-block w-100" alt="Manage-reservation" >
+                    <div id="staffCarousel" class="carousel slide carousel-fade carousel-dark">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/Manage-reservation-1.png" class="d-block w-100" alt="Manage-reservation-1" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-reservation-2.png" class="d-block w-100" alt="Manage-reservation-2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-reservation-3.png" class="d-block w-100" alt="Manage-reservation-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-reservation-4.png" class="d-block w-100" alt="Manage-reservation-4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Manage-reservation-5.png" class="d-block w-100" alt="Manage-reservation-5">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#staffCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#staffCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,11 +209,35 @@
                     <h3>カレンダーから営業時間を選択し、レストランの予約が可能です。<br>メンバーとして情報を登録している場合、予約フォームにメンバー情報が自動入力されます。</h3>
                 </div>
                 <div class="col-lg-6 order-lg-2">
-                    <img src="assets/img/Member-home-1.png" class="d-block w-100" alt="Member-home" >
+                    <div id="memberCarousel" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/Member-home-1.png" class="d-block w-100" alt="Member-home-1" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Member-reserve-1.png" class="d-block w-100" alt="Member-reserve-1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Member-reserve-2.png" class="d-block w-100" alt="Member-reserve-2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Member-reserve-3.png" class="d-block w-100" alt="Member-reserve-3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#memberCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#memberCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
         <hr class="m-0" />
+
         <!--Footer-->
         <section style="padding-left: 1%; padding-right: 1%;">
             <div class="row">
